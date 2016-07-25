@@ -1,1005 +1,800 @@
-import ramdom
+import random
 
-palabras=[	
-"aaronita"
-"aaronico"
-"aba"
-"ababa"
-"ababillarse"
-"ababol"
-"abacal"
-"abacalero"
-"abacero"
-"abaceria"
-"abacial"
-"abacora"
-"abacorar"
-"abaca"
-"abad"
-"abada"
-"abadejo"
-"abadengo"
-"abadernar"
-"abadesa"
-"abadiado"
-"abadiato"
-"abadi"
-"abadia"
-"abajadero"
-"abajamiento"
-"abajar"
-"abajera"
-"abajeno"
-"abajo"
-"abalada"
-"abalanzar"
-"abalar"
-"abalaustrado"
-"abaldonadamente"
-"abaldonamiento"
-"abaldonar"
-"abaleador"
-"abaleadura"
-"abalear"
-"abaleo"
-"abalizamiento"
-"abalizar"
-"aballar"
-"aballestar"
-"abalorio"
-"abaluartar"
-"abanador"
-"abanar"
-"abancalar"
-"abanderado"
-"abanderamiento"
-"abanderar"
-"abanderizador"
-"abanderizar"
-"abandonado"
-"abandonamiento"
-"abandonar"
-"abandonismo"
-"abandonista"
-"abandono"
-"abanear"
-"abanicar"
-"abanicazo"
-"abanico"
-"abanillo"
-"abanino"
-"abaniqueo"
-"abaniquero"
-"abaniqueria"
-"abano"
-"abanto"
-"abarajar"
-"abaratamiento"
-"abaratar"
-"abaranar"
-"abarbechar"
-"abarbetar"
-"abarca"
-"abarcable"
-"abarcado"
-"abarcador"
-"abarcadura"
-"abarcamiento"
-"abarcar"
-"abarcuzar"
-"abarcon"
-"abareque"
-"abaritonado"
-"abarloar"
-"abarquero"
-"abarquillado"
-"abarquillamiento"
-"abarquillar"
-"abarracar"
-"abarrado"
-"abarraganamiento"
-"abarraganarse"
-"abarrajado"
-"abarrajar"
-"abarramiento"
-"abarrancadero"
-"abarrancamiento"
-"abarrancar"
-"abarrar"
-"abarraz"
-"abarredera"
-"abarrenar"
-"abarrer"
-"abarrisco"
-"abarrotar"
-"abarrote"
-"abarrotero"
-"abarroteria"
-"abarse"
-"abastadamente"
-"abastamiento"
-"abastante"
-"abastanza"
-"abastar"
-"abastardar"
-"abastecedor"
-"abastecer"
-"abastecimiento"
-"abastero"
-"abastimiento"
-"abastionar"
-"abasto"
-"abasi"
-"abatanado"
-"abatanar"
-"abatatamiento"
-"abatatar"
-"abate"
-"abatible"
-"abatidero"
-"abatido"
-"abatidura"
-"abatimiento"
-"abatir"
-"abatismo"
-"abatojar"
-"abati"
-"abayado"
-"abazon"
-"abanador"
-"abanadura"
-"abanar"
-"abderitano"
-"abdicacion"
-"abdicar"
-"abdicativamente"
-"abdicativo"
-"abdomen"
-"abdominal"
-"abduccion"
-"abductor"
-"abecedario"
-"abece"
-"abedul"
-"abeja"
-"abejar"
-"abejarron"
-"abejaruco"
-"abejear"
-"abejero"
-"abejonear"
-"abejoneo"
-"abejorrear"
-"abejorreo"
-"abejorro"
-"abejuno"
-"abejon"
-"abeldar"
-"abellacado"
-"abellacar"
-"abellota"
-"abellotado"
-"abelmosco"
-"abemoladamente"
-"abemolar"
-"abencerraje"
-"abenuz"
-"aberenjenado"
-"aberracion"
-"aberrante"
-"aberrar"
-"abertal"
-"abertura"
-"aberzale"
-"abesana"
-"abestiado"
-"abestializado"
-"abeson"
-"abetal"
-"abetar"
-"abete"
-"abetinote"
-"abeto"
-"abetuna"
-"abetunado"
-"abetunar"
-"abey"
-"abia"
-"abiar"
-"abibollo"
-"abicharse"
-"abierta"
-"abiertamente"
-"abierto"
-"abiete"
-"abietino"
-"abietaceo"
-"abietineo"
-"abigarrado"
-"abigarramiento"
-"abigarrar"
-"abigeato"
-"abigeo"
-"abigotado"
-"abinar"
-"abintestato"
-"abiogenesis"
-"abipon"
-"abisagrar"
-"abisal"
-"abiselar"
-"abisinio"
-"abismado"
-"abismal"
-"abismar"
-"abismo"
-"abismatico"
-"abiso"
-"abita"
-"abitadura"
-"abitaque"
-"abitar"
-"abiton"
-"abizcochado"
-"abiotico"
-"abjuracion"
-"abjurar"
-"ablacion"
-"ablandabrevas"
-"ablandador"
-"ablandahigos"
-"ablandamiento"
-"ablandar"
-"ablandativo"
-"ablande"
-"ablandecer"
-"ablanedo"
-"ablano"
-"ablativo"
-"ablegado"
-"ablentador"
-"ablentar"
-"ablucion"
-"ablusado"
-"abnegacion"
-"abnegado"
-"abnegar"
-"abobado"
-"abobamiento"
-"abobar"
-"abobra"
-"abocadear"
-"abocado"
-"abocamiento"
-"abocanar"
-"abocar"
-"abocardado"
-"abocardar"
-"abocardo"
-"abocelado"
-"abocetado"
-"abocetamiento"
-"abocetar"
-"abochornado"
-"abochornar"
-"abocinado"
-"abocinamiento"
-"abocinar"
-"abofado"
-"abofarse"
-"abofeteador"
-"abofetear"
-"abogacia"
-"abogaderas"
-"abogadesco"
-"abogadil"
-"abogadismo"
-"abogado"
-"abogador"
-"abogamiento"
-"abogar"
-"abohetado"
-"abolaga"
-"abolengo"
-"abolicionismo"
-"abolicionista"
-"abolicion"
-"abolir"
-"abollado"
-"abolladura"
-"abollar"
-"abollonar"
-"abollon"
-"abolorio"
-"abolsado"
-"abolsarse"
-"abomaso"
-"abombado"
-"abombamiento"
-"abombar"
-"abominable"
-"abominacion"
-"abominar"
-"abonable"
-"abonado"
-"abonador"
-"abonanza"
-"abonanzar"
-"abonar"
-"abonare"
-"abondado"
-"abondamiento"
-"abondar"
-"abondo"
-"abondoso"
-"abonero"
-"abono"
-"aboquillado"
-"aboquillar"
-"aboral"
-"abordable"
-"abordador"
-"abordaje"
-"abordar"
-"abordo"
-"abordonar"
-"aborigen"
-"aborlonado"
-"aborrachado"
-"aborrajarse"
-"aborrascarse"
-"aborrecedor"
-"aborrecer"
-"aborrecible"
-"aborrecimiento"
-"aborregado"
-"aborregarse"
-"aborrible"
-"aborrir"
-"aborronar"
-"aborso"
-"abortadura"
-"abortamiento"
-"abortar"
-"abortista"
-"abortivo"
-"aborto"
-"aborton"
-"aborujar"
-"abotagamiento"
-"abotagarse"
-"abotargarse"
-"abotinado"
-"abotonador"
-"abotonadura"
-"abotonar"
-"abovedado"
-"abovedar"
-"aboyado"
-"aboyar"
-"abozalar"
-"abozo"
-"abra"
-"abracadabra"
-"abracadabrante"
-"abracar"
-"abracijarse"
-"abracijo"
-"abrasadamente"
-"abrasador"
-"abrasamiento"
-"abrasar"
-"abrasilado"
-"abrasivo"
-"abrasion"
-"abravar"
-"abravecer"
-"abraxas"
-"abrazada"
-"abrazadera"
-"abrazador"
-"abrazamiento"
-"abrazar"
-"abrazo"
-"abreboca"
-"abrebotellas"
-"abrecartas"
-"abrecoches"
-"abregancias"
-"abrelatas"
-"abrenunciar"
-"abrenuncio"
-"abreojos"
-"abrepuno"
-"abretonar"
-"abrevadero"
-"abrevador"
-"abrevar"
-"abreviacion"
-"abreviadamente"
-"abreviado"
-"abreviador"
-"abreviaduria"
-"abreviamiento"
-"abreviar"
-"abreviatura"
-"abreviaturia"
-"abrezar"
-"abriboca"
-"abribonado"
-"abribonarse"
-"abridero"
-"abridor"
-"abrigada"
-"abrigadero"
-"abrigado"
-"abrigador"
-"abrigadura"
-"abrigamiento"
-"abrigar"
-"abrigano"
-"abrigo"
-"abril"
-"abrileno"
-"abrillantador"
-"abrillantar"
-"abrimiento"
-"abriolar"
-"abrir"
-"abrochador"
-"abrochadura"
-"abrochamiento"
-"abrochar"
-"abrogacion"
-"abrogar"
-"abrojal"
-"abrojillo"
-"abrojo"
-"abrojin"
-"abroma"
-"abromado"
-"abromar"
-"abroncar"
-"abroquelado"
-"abroquelar"
-"abrotonar"
-"abrumador"
-"abrumar"
-"abrumarse"
-"abrunal"
-"abruno"
-"abrupcion"
-"abrupto"
-"abrutado"
-"abruzarse"
-"abruzo"
-"abrunal"
-"abruno"
-"abrotano"
-"absceso"
-"abscisa"
-"abscision"
-"absconder"
-"absencia"
-"absenta"
-"absentarse"
-"absente"
-"absentismo"
-"absentista"
-"absidal"
-"absidiolo"
-"absintio"
-"absolucion"
-"absoluta"
-"absolutamente"
-"absolutidad"
-"absolutismo"
-"absolutista"
-"absoluto"
-"absolutorio"
-"absolvederas"
-"absolvedor"
-"absolver"
-"absorbencia"
-"absorbente"
-"absorber"
-"absorbible"
-"absorbimiento"
-"absorciometro"
-"absorcion"
-"absortar"
-"absorto"
-"abstemio"
-"abstencionismo"
-"abstencionista"
-"abstencion"
-"abstener"
-"abstergente"
-"absterger"
-"abstersivo"
-"abstersion"
-"abstinencia"
-"abstinente"
-"abstraccion"
-"abstractivo"
-"abstracto"
-"abstraer"
-"abstraido"
-"abstruso"
-"absuelto"
-"absurdidad"
-"absurdo"
-"abubilla"
-"abubo"
-"abuchear"
-"abucheo"
-"abuela"
-"abuelastro"
-"abuelo"
-"abuhado"
-"abuhamiento"
-"abuhardillado"
-"abujardar"
-"abuje"
-"abulaga"
-"abulagar"
-"abulense"
-"abulia"
-"abullonar"
-"abulonar"
-"abultado"
-"abultamiento"
-"abultar"
-"abulon"
-"abundado"
-"abundamiento"
-"abundancia"
-"abundancial"
-"abundante"
-"abundantemente"
-"abundar"
-"abundo"
-"abundoso"
-"abur"
-"aburar"
-"aburelado"
-"aburguesamiento"
-"aburguesarse"
-"aburrado"
-"aburrarse"
-"aburricion"
-"aburridamente"
-"aburrido"
-"aburridor"
-"aburrimiento"
-"aburrir"
-"aburujar"
-"abusado"
-"abusador"
-"abusar"
-"abusionero"
-"abusivo"
-"abusion"
-"abuso"
-"abuson"
-"abuzarse"
-"abunolado"
-"abunolar"
-"abunuelado"
-"abunuelar"
-"abyeccion"
-"abyecto"
-"abes"
-"abestola"
-"abenola"
-"abenula"
-"abulico"
-"aca"
-"acabable"
-"acabada"
-"acabadamente"
-"acabado"
-"acabador"
-"acabalar"
-"acaballadero"
-"acaballado"
-"acaballar"
-"acaballerado"
-"acaballerar"
-"acaballonar"
-"acabamiento"
-"acabar"
-"acabanar"
-"acabe"
-"acabellado"
-"acabestrillar"
-"acabijo"
-"acabildar"
-"acabo"
-"acabose"
-"acabronado"
-"acacharse"
-"acachetar"
-"acachetear"
-"acachorrar"
-"acacia"
-"acaciano"
-"academia"
-"academicismo"
-"academicista"
-"academio"
-"academista"
-"academizar"
-"acadio"
-"academicamente"
-"academico"
-"acaecedero"
-"acaecer"
-"acaecimiento"
-"acafresna"
-"acaguasarse"
-"acahual"
-"acairelar"
-"acal"
-"acalabrotar"
-"acalambrar"
-"acaldar"
-"acalefo"
-"acalenturarse"
-"acalia"
-"acallador"
-"acallantar"
-"acallar"
-"acalmar"
-"acaloradamente"
-"acalorado"
-"acaloramiento"
-"acalorar"
-"acaloro"
-"acalonar"
-"acalugar"
-"acalumniador"
-"acalumniar"
-"acalorico"
-"acamado"
-"acamar"
-"acamaya"
-"acambrayado"
-"acamellado"
-"acamellonar"
-"acampada"
-"acampamento"
-"acampanado"
-"acampanar"
-"acampar"
-"acampo"
-"acamuzado"
-"acanalado"
-"acanalador"
-"acanaladura"
-"acanalar"
-"acanallado"
-"acanallar"
-"acandilado"
-"acanelado"
-"acanelonar"
-"acanillado"
-"acanilladura"
-"acantalear"
-"acantarar"
-"acantear"
-"acantilado"
-"acantilar"
-"acantinflado"
-"acantio"
-"acanto"
-"acantocefalo"
-"acantonamiento"
-"acantonar"
-"acantopterigio"
-"acantaceo"
-"acaparador"
-"acaparamiento"
-"acaparar"
-"acaparrarse"
-"acaparrosado"
-"acapillar"
-"acapizarse"
-"acaponado"
-"acapullarse"
-"acapulqueno"
-"acaracolado"
-"acarambanado"
-"acaramelar"
-"acarar"
-"acardenalar"
-"acareamiento"
-"acarear"
-"acariciador"
-"acariciar"
-"acarminado"
-"acarnerado"
-"acaronar"
-"acarralado"
-"acarraladura"
-"acarralar"
-"acarrarse"
-"acarrascado"
-"acarrazarse"
-"acarreadizo"
-"acarreador"
-"acarreamiento"
-"acarrear"
-"acarreo"
-"acarretar"
-"acarreto"
-"acartonarse"
-"acasamatado"
-"acasarado"
-"acaserarse"
-"acaso"
-"acastanado"
-"acastillado"
-"acastorado"
-"acatable"
-"acatadamente"
-"acatadura"
-"acatalecto"
-"acatalectico"
-"acatamiento"
-"acatanca"
-"acatar"
-"acatarrar"
-"acates"
-"acato"
-"acatolico"
-"acaudalado"
-"acaudalador"
-"acaudalar"
-"acaudillador"
-"acaudillamiento"
-"acaudillar"
-"acaule"
-"acautelarse"
-"acanaverear"
-"acanonear"
-"acanutado"
-"acceder"
-"accesibilidad"
-"accesible"
-"accesional"
-"accesion"
-"acceso"
-"accesoria"
-"accesoriamente"
-"accesorio"
-"accidentabilidad"
-"accidentadamente"
-"accidentado"
-"accidental"
-"accidentalidad"
-"accidentalmente"
-"accidentar"
-"accidentariamente"
-"accidentario"
-"accidente"
-"accionado"
-"accionamiento"
-"accionar"
-"accionariado"
-"accionarial"
-"accionario"
-"accionista"
-"accitano"
-"accion"
-"accesit"
-"acebadamiento"
-"acebadar"
-"acebal"
-"acebeda"
-"acebedo"
-"acebibe"
-"acebo"
-"acebollado"
-"acebolladura"
-"acebrado"
-"acebuchal"
-"acebuche"
-"acebucheno"
-"acebuchina"
-"acechadera"
-"acechadero"
-"acechador"
-"acechamiento"
-"acechanza"
-"acechar"
-"aceche"
-"acecho"
-"acechon"
-"acecido"
-"acecinar"
-"acedamente"
-"acedar"
-"acedera"
-"acederaque"
-"acederilla"
-"acederon"
-"acedia"
-"acedo"
-"acedura"
-"acedia"
-"acefalia"
-"acefalismo"
-"acefalia"
-"aceifa"
-"aceitada"
-"aceitar"
-"aceitazo"
-"aceite"
-"aceitera"
-"aceitero"
-"aceiteria"
-"aceitoso"
-"aceituna"
-"aceitunado"
-"aceitunero"
-"aceitunil"
-"aceitunillo"
-"aceituno"
-"aceituni"
-"aceiton"
-"acejero"
-"acelajado"
-"aceleracion"
-"acelerada"
-"aceleradamente"
-"acelerado"
-"acelerador"
-"aceleramiento"
-"acelerar"
-"aceleratriz"
-"acelerometro"
-"aceleron"
-"acelga"
-"acemilado"
-"acemilar"
-"acemilero"
-"acemileria"
-"acemita"
-"acemite"
-"acender"
-"acendrado"
-"acendramiento"
-"acendrar"
-"acenefa"
-"acenoria"
-"acensar"
-"acensuador"
-"acensuar"
-"acento"
-"acentuacion"
-"acentuadamente"
-"acentual"
-"acentuar"
-"acepar"
-"acepcion"
-"acepilladura"
-"acepillar"
-"aceptabilidad"
-"aceptable"
-"aceptacion"
-"aceptadamente"
-"aceptador"
-"aceptar"
-"acepto"
-"aceptor"
-"acequia"
-"acequiaje"
-"acequiar"
-"acequiero"
-"acera"
-"aceracion"
-"acerado"
-"acerar"
-"acerbamente"
-"acerbidad"
-"acerbo"
-"acerca"
-"acercador"
-"acercamiento"
-"acercanza"
-"acercar"
-"acereria"
-"acerico"
-"acerillo"
-"acerino"
-"acerista"
-"acernadar"
-"acero"
-"acerola"
-"acerolo"
-"acerrojar"
-"acertado"
-"acertador"
-"acertajo"
-"acertajon"
-"acertamiento"
-"acertante"
-"acertar"
-"acertero"
-"acertijo"
-"aceruelo"
-"acervar"
-"acervo"
-"aceraceo"
-"aceria"
-"acerineo"
-"acescencia"
-"acescente"
-"acetal"
-"acetaldehido"
-"acetar"
-"acetato"
-"acetificacion"
-"acetificador"
-"acetificar"
-"acetileno"
-"acetilo"
-"acetimetria"
-"acetite"
-"aceto"
-"acetona"
-"acetosa"
-"acetosidad"
-"acetosilla"
-"acetoso"
-"acetre"
-"acetrero"
-"acetreria"
-"acetrinar"
-"acetabulo"
-"acetimetro"
-"acetin"
-"acevilar"
-"acezante"
-"acezar"
-"acezo"
-"acezoso"
-"acena"
-"acenero"
-"achabacanamiento"
-"achabacanar"
-"achacable"
-"achacar"
-"achachairu"
-"achachay"
-"achacoso"
-"achaflanar"
-"achajuanado"
-"achajuanarse"
-"achalay"
-"achambergado"
-"achampanado"
-"achampanado"
-"achancar"
-"achantar"
-"achaparrado"
-"achaparrarse"
-"achaplinarse"
-"achaque"
-"achaquero"
-"achaquiento"
-"achara"
-"acharar"
-"achares"
-"acharolado"
-"acharolar"
-"achara"
-"achatamiento"
-"achatar"
-"achicado"
-"achicador"
+palabras=[
+	"abogaderas",
+	"abogadesco",
+	"abogadil",
+	"abogadismo",
+	"abogado",
+	"abogador",
+	"abogamiento",
+	"abogar",
+	"abohetado",
+	"abolaga",
+	"abolengo",
+	"abolicionismo",
+	"abolicionista",
+	"abolicion",
+	"abolir",
+	"abollado",
+	"abolladura",
+	"abollar",
+	"abollonar",
+	"abollon",
+	"abolorio",
+	"abolsado",
+	"abolsarse",
+	"abomaso",
+	"abombado",
+	"abombamiento",
+	"abombar",
+	"abominable",
+	"abominacion",
+	"abominar",
+	"abonable",
+	"abonado",
+	"abonador",
+	"abonanza",
+	"abonanzar",
+	"abonar",
+	"abonare",
+	"abondado",
+	"abondamiento",
+	"abondar",
+	"abondo",
+	"abondoso",
+	"abonero",
+	"abono",
+	"aboquillado",
+	"aboquillar",
+	"aboral",
+	"abordable",
+	"abordador",
+	"abordaje",
+	"abordar",
+	"abordo",
+	"abordonar",
+	"aborigen",
+	"aborlonado",
+	"aborrachado",
+	"aborrajarse",
+	"aborrascarse",
+	"aborrecedor",
+	"aborrecer",
+	"aborrecible",
+	"aborrecimiento",
+	"aborregado",
+	"aborregarse",
+	"aborrible",
+	"aborrir",
+	"aborronar",
+	"aborso",
+	"abortadura",
+	"abortamiento",
+	"abortar",
+	"abortista",
+	"abortivo",
+	"aborto",
+	"aborton",
+	"aborujar",
+	"abotagamiento",
+	"abotagarse",
+	"abotargarse",
+	"abotinado",
+	"abotonador",
+	"abotonadura",
+	"abotonar",
+	"abovedado",
+	"abovedar",
+	"aboyado",
+	"aboyar",
+	"abozalar",
+	"abozo",
+	"abra",
+	"abracadabra",
+	"abracadabrante",
+	"abracar",
+	"abracijarse",
+	"abracijo",
+	"abrasadamente",
+	"abrasador",
+	"abrasamiento",
+	"abrasar",
+	"abrasilado",
+	"abrasivo",
+	"abrasion",
+	"abravar",
+	"abravecer",
+	"abraxas",
+	"abrazada",
+	"abrazadera",
+	"abrazador",
+	"abrazamiento",
+	"abrazar",
+	"abrazo",
+	"abreboca",
+	"abrebotellas",
+	"abrecartas",
+	"abrecoches",
+	"abregancias",
+	"abrelatas",
+	"abrenunciar",
+	"abrenuncio",
+	"abreojos",
+	"abrepuno",
+	"abretonar",
+	"abrevadero",
+	"abrevador",
+	"abrevar",
+	"abreviacion",
+	"abreviadamente",
+	"abreviado",
+	"abreviador",
+	"abreviaduria",
+	"abreviamiento",
+	"abreviar",
+	"abreviatura",
+	"abreviaturia",
+	"abrezar",
+	"abriboca",
+	"abribonado",
+	"abribonarse",
+	"abridero",
+	"abridor",
+	"abrigada",
+	"abrigadero",
+	"abrigado",
+	"abrigador",
+	"abrigadura",
+	"abrigamiento",
+	"abrigar",
+	"abrigano",
+	"abrigo",
+	"abril",
+	"abrileno",
+	"abrillantador",
+	"abrillantar",
+	"abrimiento",
+	"abriolar",
+	"abrir",
+	"abrochador",
+	"abrochadura",
+	"abrochamiento",
+	"abrochar",
+	"abrogacion",
+	"abrogar",
+	"abrojal",
+	"abrojillo",
+	"abrojo",
+	"abrojin",
+	"abroma",
+	"abromado",
+	"abromar",
+	"abroncar",
+	"abroquelado",
+	"abroquelar",
+	"abrotonar",
+	"abrumador",
+	"abrumar",
+	"abrumarse",
+	"abrunal",
+	"abruno",
+	"abrupcion",
+	"abrupto",
+	"abrutado",
+	"abruzarse",
+	"abruzo",
+	"abrunal",
+	"abruno",
+	"abrotano",
+	"absceso",
+	"abscisa",
+	"abscision",
+	"absconder",
+	"absencia",
+	"absenta",
+	"absentarse",
+	"absente",
+	"absentismo",
+	"absentista",
+	"absidal",
+	"absidiolo",
+	"absintio",
+	"absolucion",
+	"absoluta",
+	"absolutamente",
+	"absolutidad",
+	"absolutismo",
+	"absolutista",
+	"absoluto",
+	"absolutorio",
+	"absolvederas",
+	"absolvedor",
+	"absolver",
+	"absorbencia",
+	"absorbente",
+	"absorber",
+	"absorbible",
+	"absorbimiento",
+	"absorciometro",
+	"absorcion",
+	"absortar",
+	"absorto",
+	"abstemio",
+	"abstencionismo",
+	"abstencionista",
+	"abstencion",
+	"abstener",
+	"abstergente",
+	"absterger",
+	"abstersivo",
+	"abstersion",
+	"abstinencia",
+	"abstinente",
+	"abstraccion",
+	"abstractivo",
+	"abstracto",
+	"abstraer",
+	"abstraido",
+	"abstruso",
+	"absuelto",
+	"absurdidad",
+	"absurdo",
+	"abubilla",
+	"abubo",
+	"abuchear",
+	"abucheo",
+	"abuela",
+	"abuelastro",
+	"abuelo",
+	"abuhado",
+	"abuhamiento",
+	"abuhardillado",
+	"abujardar",
+	"abuje",
+	"abulaga",
+	"abulagar",
+	"abulense",
+	"abulia",
+	"abullonar",
+	"abulonar",
+	"abultado",
+	"abultamiento",
+	"abultar",
+	"abulon",
+	"abundado",
+	"abundamiento",
+	"abundancia",
+	"abundancial",
+	"abundante",
+	"abundantemente",
+	"abundar",
+	"abundo",
+	"abundoso",
+	"abur",
+	"aburar",
+	"aburelado",
+	"aburguesamiento",
+	"aburguesarse",
+	"aburrado",
+	"aburrarse",
+	"aburricion",
+	"aburridamente",
+	"aburrido",
+	"aburridor",
+	"aburrimiento",
+	"aburrir",
+	"aburujar",
+	"abusado",
+	"abusador",
+	"abusar",
+	"abusionero",
+	"abusivo",
+	"abusion",
+	"abuso",
+	"abuson",
+	"abuzarse",
+	"abunolado",
+	"abunolar",
+	"abunuelado",
+	"abunuelar",
+	"abyeccion",
+	"abyecto",
+	"abes",
+	"abestola",
+	"abenola",
+	"abenula",
+	"abulico",
+	"aca",
+	"acabable",
+	"acabada",
+	"acabadamente",
+	"acabado",
+	"acabador",
+	"acabalar",
+	"acaballadero",
+	"acaballado",
+	"acaballar",
+	"acaballerado",
+	"acaballerar",
+	"acaballonar",
+	"acabamiento",
+	"acabar",
+	"acabanar",
+	"acabe",
+	"acabellado",
+	"acabestrillar",
+	"acabijo",
+	"acabildar",
+	"acabo",
+	"acabose",
+	"acabronado",
+	"acacharse",
+	"acachetar",
+	"acachetear",
+	"acachorrar",
+	"acacia",
+	"acaciano",
+	"academia",
+	"academicismo",
+	"academicista",
+	"academio",
+	"academista",
+	"academizar",
+	"acadio",
+	"academicamente",
+	"academico",
+	"acaecedero",
+	"acaecer",
+	"acaecimiento",
+	"acafresna",
+	"acaguasarse",
+	"acahual",
+	"acairelar",
+	"acal",
+	"acalabrotar",
+	"acalambrar",
+	"acaldar",
+	"acalefo",
+	"acalenturarse",
+	"acalia",
+	"acallador",
+	"acallantar",
+	"acallar",
+	"acalmar",
+	"acaloradamente",
+	"acalorado",
+	"acaloramiento",
+	"acalorar",
+	"acaloro",
+	"acalonar",
+	"acalugar",
+	"acalumniador",
+	"acalumniar",
+	"acalorico",
+	"acamado",
+	"acamar",
+	"acamaya",
+	"acambrayado",
+	"acamellado",
+	"acamellonar",
+	"acampada",
+	"acampamento",
+	"acampanado",
+	"acampanar",
+	"acampar",
+	"acampo",
+	"acamuzado",
+	"acanalado",
+	"acanalador",
+	"acanaladura",
+	"acanalar",
+	"acanallado",
+	"acanallar",
+	"acandilado",
+	"acanelado",
+	"acanelonar",
+	"acanillado",
+	"acanilladura",
+	"acantalear",
+	"acantarar",
+	"acantear",
+	"acantilado",
+	"acantilar",
+	"acantinflado",
+	"acantio",
+	"acanto",
+	"acantocefalo",
+	"acantonamiento",
+	"acantonar",
+	"acantopterigio",
+	"municipe",
+	"munifico",
+	"munusculo",
+	"muquicion",
+	"muquir",
+	"mur",
+	"mura",
+	"muradal",
+	"murador",
+	"murajes",
+	"mural",
+	"muralismo",
+	"muralista",
+	"muralla",
+	"murallon",
+	"murar",
+	"murceguillo",
+	"murceo",
+	"murciano",
+	"murciar",
+	"murcielaguina",
+	"murcigallero",
+	"murciglero",
+	"murcio",
+	"murciegalo",
+	"murcielago",
+	"murecillo",
+	"innovamiento",
+	"innovar",
+	"innumerabilidad",
+	"innumerable",
+	"innumerablemente",
+	"innumeridad",
+	"innumero",
+	"inobediencia",
+	"inobediente",
+	"inobjetable",
+	"inobservable",
+	"inobservancia",
+	"inobservante",
+	"inocencia",
+	"inocentada",
+	"inocente",
+	"inocentemente",
+	"inocenton",
+	"inocuidad",
+	"inoculacion",
+	"inoculador",
+	"inocular",
+	"inocultable",
+	"inocuo",
+	"inodoro",
+	"inofensivo",
+	"inofenso",
+	"inoficioso",
+	"inolvidable",
+	"inope",
+	"inoperable",
+	"inoperancia",
+	"inoperante",
+	"inopia",
+	"inopinable",
+	"inopinadamente",
+	"inopinado",
+	"inoportunamente",
+	"inoportunidad",
+	"inoportuno",
+	"inordenadamente",
+	"inordenado",
+	"inordinado",
+	"inorganico",
+	"inoxidable",
+	"input",
+	"inquebrantable",
+	"inquerir",
+	"inquietacion",
+	"inquietador",
+	"inquietamente",
+	"inquietante",
+	"inquietar",
+	"excandecer",
+	"excarcelable",
+	"excarcelacion",
+	"excarcelar",
+	"excautivo",
+	"excava",
+	"excavacion",
+	"excavador",
+	"excavar",
+	"excedencia",
+	"excedentario",
+	"excedente",
+	"exceder",
+	"excelencia",
+	"excelente",
+	"excelentemente",
+	"excelentisimo",
+	"excelsamente",
+	"excelsitud",
+	"excelso",
+	"excentricidad",
+	"excepcional",
+	"excepcionalidad",
+	"excepcionar",
+	"excepcion",
+	"exceptador",
+	"exceptar",
+	"exceptivo",
+	"excepto",
+	"exceptuacion",
+	"exceptuar",
+	"excerpta",
+	"excerta",
+	"excesivamente",
+	"excesivo",
+	"exceso",
+	"excidio",
+	"excipiente",
+	"excitabilidad",
+	"excitable",
+	"excitacion",
+	"excitador",
+	"excitante",
+	"excitar",
+	"excitativo",
+	"excitatriz",
+	"exclamacion",
+	"exclamar",
+	"exclamativo",
+	"exclamatorio",
+	"exclaustracion",
+	"exclaustrado",
+	"exclaustrar",
+	"excluible",
+	"excluidor",
+	"excluir",
+	"exclusiva",
+	"exclusivamente",
+	"exclusive",
+	"exclusividad",
+	"exclusivismo",
+	"exclusivista",
+	"exclusivo",
+	"exclusion",
+	"excluso",
+	"excluyente",
+	"excogitable",
+	"excogitar",
+	"excombatiente",
+	"excomulgado",
+	"excomulgador",
+	"excomulgar",
+	"excomunicacion",
+	"excomunion",
+	"excoriacion",
+	"excoriar",
+	"excrecencia",
+	"excrecion",
+	"excremental",
+	"excrementar",
+	"excrementicio",
+	"excremento",
+	"excrementoso",
+	"excrescencia",
+	"capacear",
+	"capaceta",
+	"capacete",
+	"capacha",
+	"capachada",
+	"capachero",
+	"capacho",
+	"capacidad",
+	"capacitacion",
+	"capacitar",
+	"capadillo",
+	"capadocio",
+	"capador",
+	"capadura",
+	"capanga",
+	"capar",
+	"capararoch",
+	"caparazon",
+	"caparidaceo",
+	"caparra",
+	"caparro",
+	"caparrosa",
+	"caparron",
+	"caparideo",
+	"capataz",
+	"capaz",
+	"capaza",
+	"capazmente",
+	"capazo",
+	"capazon",
+	"capciosidad",
+	"capcioso",
+	"capcion",
+	"capdal",
+	"capea",
+	"capeada",
+	"capeadera",
+	"capeador",
+	"capear",
+	"capeja",
+	"capel",
+	"capelardente",
+	"capelete",
+	"capelina",
+	"capellada",
+	"capellania",
+	"monitor",
+	"monitorio",
+	"monitorizar",
+	"monja",
+	"monje",
+	"monjerio",
+	"monjil",
+	"monjita",
+	"monjia",
+	"monjio",
+	"mono",
+	"monoaural",
+	"monocarril",
+	"monoceronte",
+	"monocerote",
+	"monocito",
+	"monoclamideo",
+	"monoclonal",
+	"monocloroacetico",
+	"monoclinico",
+	"monocolor",
+	"monocorde",
+	"monocordio",
+	"monocotiledon",
+	"monocotiledoneo",
+	"monocromo",
+	"monocromatico",
+	"monocular",
+	"monocultivo",
+	"monodia",
+	"monofilo",
+	"monofisismo",
+	"monofisita",
+	"monofasico",
+	"monogamia",
+	"monogenismo",
+	"monogenista",
+	"monografista",
+	"monografia",
+	"monograma",
+	"monografico",
+	"monoico",
+	"monolingüe",
+	"monolito",
+	"monologar",
+	"monolitico",
+	"monomaniaco",
+	"monomaniatico",
+	"monomania",
+	"monomaniaco",
+	"monomaquia",
+	"monometalismo",
+	"monometalista",
+	"monomiario",
+	"monomio",
+	"monomotor",
+	"monona",
+	"monopastos",
+	"monopatin",
+	"monoplano",
+	"monoplaza",
+	"monopolio",
+	"monopolista",
+	"monopolizacion",
+	"monopolizador",
+	"monopolizar",
+	"monopolistico",
+	"monopsonio",
+	"monoptongacion",
+	"monoptongar",
+	"monoptongo",
+	"monopetalo",
+	"monorquidia",
+	"monorrail",
+	"monorriel",
+	"monorrimo",
+	"monorritmico",
+	"monosabio",
+	"tiron",
+	"tisana",
+	"tisanuro",
+	"tisera",
+	"tisiologia",
+	"tisiologico",
+	"tisis",
+	"tisiologo",
+	"tiste",
+	"tisular",
+	"tisuria",
+	"tisu",
+	"titanio",
+	"titar",
+	"titear",
+	"titeo",
+	"titerero",
+	"titeretada",
+	"titerista",
+	"titi",
+	"titiaro",
+	"titilacion",
+	"titilador",
+	"titilar",
+	"titileo",
+	"titingo",
+	"titipuchal",
+	"titirimundi",
+	"titiritaina",
+	"titiritar",
+	"titiritero",
+	"tito",
+	"titubar",
+	"titubeante",
+	"titubear",
+	"titubeo",
+	"titulacion",
+	"titulado",
+	"titular",
+	"titularidad",
+	"titularizacion",
+	"titularizar",
+	"titulatura",
+	"titulillo",
+	"titan",
+	"titanico",
+	"titi",
+	"titimalo",
+	"tiufado",
+	"tiuque",
+	"tiza",
+	"tizana",
+	"tizate",
+	"tizna",
+	"tiznado",
+	"tiznadura",
+	"tiznajo",
+	"tiznar",
+	"tizne",
+	"tiznero",
+	"tiznon",
+	"tizo",
+	"tizona",
+	"tizonada",
+	"tizonazo",
+	"tizoncillo",
+	"tizonear",
+	"tizonera",
+	"tizon",
+	"tina",
+	"tineria",
+	"tinoso",
+	"tinuela",
+	"tlachique",
+	"tlaco",
+	"tlaconete",
+	"tlacote",
+	"tlacoyo",
+	"tlacuache",
+	"tlapaleria",
+	"tlaxcalteca",
+	"tlazol",
+	"to",
+	"toa",
+	"toalla",
+	"toallero",
+	"toalleta",
 ]
 
+palabra=random.choice(palabras)
+print(palabra)
 
-ramdom.shuffle(palabaras)
+guion=len(palabra)* " _ "
+print (guion)
+
+
+letra=input("ingrese una letra: ")
+
+if letra in palabra:				
+	print (letra) 
+
+

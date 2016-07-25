@@ -1,5 +1,5 @@
 import random
-from funciones import aleatorio
+
 palabras=[
 	"abogaderas",
 	"abogadesco",
@@ -789,3 +789,12 @@ palabras=[
 p=random.choice(palabras)
 print(p)
 	
+
+
+print(			  _______
+      			I     I
+      			I    ( )
+      			I    _l_
+      			I    / \
+      			I
+			  __I__		)	
