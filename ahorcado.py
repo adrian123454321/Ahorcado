@@ -783,18 +783,26 @@ palabras=[
 	"toalla",
 	"toallero",
 	"toalleta",
-
 ]
+intentos=7
+palabra=random.choice(palabras)
 
-p=random.choice(palabras)
-print(p)
+
+print("Bienvenido")
+while intentos !=0:
+	print(palabra)
+	guiones=[]
+	for letra in palabra
+		guiones.append( "_" )
+
 	
+	letra=input("ingrese una letra: ")
+	if letra in palabra:
+		print(letra)
+		print("Numero de intentos restantes: ",intentos)
+	else:
+		intentos=(intentos-1)
+		print("Numero de intentos restantes: ",intentos)
 
 
-print(			  _______
-      			I     I
-      			I    ( )
-      			I    _l_
-      			I    / \
-      			I
-			  __I__		)	
+
