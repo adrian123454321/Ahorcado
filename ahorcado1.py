@@ -1,3 +1,4 @@
+from funciones import ahorcado
 import random
 
 palabras=[
@@ -787,28 +788,37 @@ palabras=[
 
 palabra=random.choice(palabras)
 
-intentos=7
+
 print("Bienvenido")
-while intentos !=0:
-	print(palabra)
-	guiones=[]
-	for letra in palabra:
-		guiones.append( "_" )
-	print(guiones)
+intentos=7
+print(palabra)
+guiones=[]
+for letra in palabra:
+	guiones.append( "_" )
+print(guiones)
 	
+fun=ahorcado(intentos)
+print (fun)
 
+letra=input("ingrese una letra: ")
+for i in range(len(palabra)):
+	if palabra[i]==letra:
 	
-	letra=input("ingrese una letra: ")
-	for i in range(len(palabra)):
-		if palabra[i]==letra:
-			print(intentos)
-			guiones[i]=letra
-			print(guiones)
-		else:
-			intentos=(intentos-1)
-			print(intentos)		
+		guiones[i]=letra
+		print(guiones)
+	else:
+		intentos=(intentos-1)	
+fun=ahorcado(intentos)
+print (fun)	
 
-
+letra=input("ingrese una letra: ")
+for i in range(len(palabra)):
+	if palabra[i]==letra:
+		
+		guiones[i]=letra
+		print(guiones)
+		
+			
 
 
 		
