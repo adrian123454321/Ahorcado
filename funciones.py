@@ -1,21 +1,62 @@
-def ahorcado(intentos):
-	muneco=["______","     (",")","     _", "_","      )","("]
+def mu (v):
+	if v == 1:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +
+		"| \n" +      
+		"| \n" +     
+		"| \n" +   
+		"| \n" +     
+		"|") 
+	if v == 2:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +
+		"|      ( ) \n" +      
+		"| \n" +     
+		"| \n" +   
+		"| \n" +     
+		"|") 
+	if v == 3:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +
+		"|      ( ) \n" +      
+		"|       |  \n" +     
+		"|       | \n" +   
+		"|\n" +     
+		"|") 
+	if v == 4:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +
+		"|      ( ) \n" +      
+		"|       |  \n" +     
+		"|       | \n" +   
+		"|      / \n" +   
+		"|") 
+	if v == 5:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +
+		"|      ( ) \n" +      
+		"|       |  \n" +     
+		"|       | \n" +   
+		"|      / \  \n" +   
+		"|") 
+	if v == 6:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +   
+		"|      ( ) \n" +      
+		"|      _|  \n" +     
+		"|       | \n" +   
+		"|      / \  \n" + 
+		"|") 	
+	if v == 7:
+		return ("_ _ _ _ _ \n"+
+		"|       |\n" +
+		"|      ( ) \n" +      
+		"|      _|_  \n" +     
+		"|       | \n" +   
+		"|      / \  \n" + 
+		"|") 
 
-
-	if intentos==7:
-		print (muneco[0])
-		print (muneco[1],muneco[2])
-		print (muneco[3],muneco[4])			
-		print (muneco[5],muneco[6])
-	
-	if intentos==6:
-		print (muneco[1],muneco[2])
-		print (muneco[3],muneco[4])			
-		print (muneco[5],muneco[6])
-
-	if intentos==5:
-		print (muneco[2])
-		print (muneco[3],muneco[4])			
-		print (muneco[5],muneco[6])
-
-
+		
+#		_|_
+#		 |
+#		/ \
