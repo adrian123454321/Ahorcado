@@ -1,5 +1,5 @@
 import random
-from error import mu
+from funciones import mu
 lista=["amar","apoyar","aprender","ayudar","bailar","beber","caer","cambiar","cantar","cerrar","cocinar","comenzar","comer","comparar","comprar","conducir","contar","continuar","correr","cortar","costar","creer","dar","decidir","decir","descansar","describir","destruir","doler","dormir","elegir","empezar","empujar","encontrar","encontrarse","enseñar","entender","esconder","escribir","escuchar","esperar","estudiar","explicar","ganar","gritar","hablar","hacer","intentar","ir","jugar","lanzar","lavar","leer","limpiar","llamar","llegar","llenar","llorar","luchar","mandar","mejorar","mentir","mirar","morir","mostrar","mover","necesitar","ocurrir","odiar","ofrecer","olvidar","oir","pagar","pensar","perder","perdonar","permitir","poder","poner","preferir","preguntar","preparar","prometer","pulsar","quedarse","quemar","querer","recibir","reconocer","recordar","repetir","responder","reir","saber","sacar","salir","saltar","sentar","sentir","ser","sonreir","tener","terminar","tirar","tocar","trabajar"]
 v=0
 print("bienvenido")
