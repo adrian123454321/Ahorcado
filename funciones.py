@@ -1,5 +1,5 @@
-def mu (v):
-	if v == 1:
+def ahorcado (intentos):
+	if intentos == 1:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +
 		"| \n" +      
@@ -7,7 +7,7 @@ def mu (v):
 		"| \n" +   
 		"| \n" +     
 		"|") 
-	if v == 2:
+	if intentos == 2:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +
 		"|      ( ) \n" +      
@@ -15,7 +15,7 @@ def mu (v):
 		"| \n" +   
 		"| \n" +     
 		"|") 
-	if v == 3:
+	if intentos == 3:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +
 		"|      ( ) \n" +      
@@ -23,7 +23,7 @@ def mu (v):
 		"|       | \n" +   
 		"|\n" +     
 		"|") 
-	if v == 4:
+	if intentos == 4:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +
 		"|      ( ) \n" +      
@@ -31,7 +31,7 @@ def mu (v):
 		"|       | \n" +   
 		"|      / \n" +   
 		"|") 
-	if v == 5:
+	if intentos == 5:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +
 		"|      ( ) \n" +      
@@ -39,7 +39,7 @@ def mu (v):
 		"|       | \n" +   
 		"|      / \  \n" +   
 		"|") 
-	if v == 6:
+	if intentos == 6:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +   
 		"|      ( ) \n" +      
@@ -47,7 +47,7 @@ def mu (v):
 		"|       | \n" +   
 		"|      / \  \n" + 
 		"|") 	
-	if v == 7:
+	if intentos == 7:
 		return ("_ _ _ _ _ \n"+
 		"|       |\n" +
 		"|      ( ) \n" +      

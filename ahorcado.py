@@ -809,7 +809,6 @@ for i in range(len(palabra)):
 	else:
 		intentos=(intentos-1)	
 		
-
 fun=ahorcado(intentos)
 print (fun)	
 
@@ -829,10 +828,32 @@ for i in range(len(palabra)):
 	else:
 		intentos=(intentos-1)	
 fun=ahorcado(intentos)
+print (fun)
+
+
+letra=input("ingrese una letra: ")
+for i in range(len(palabra)):
+	if palabra[i]==letra:
+	
+		guiones[i]=letra
+		print(guiones)
+	else:
+		intentos=(intentos-1)	
+		
+
+fun=ahorcado(intentos)
 print (fun)	
 
-		
-			
 
-
+letra=input("ingrese una letra: ")
+for i in range(len(palabra)):
+	if palabra[i]==letra:
+	
+		guiones[i]=letra
+		print(guiones)
+	else:
+		intentos=(intentos-1)	
 		
+
+fun=ahorcado(intentos)
+print (fun)	
