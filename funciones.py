@@ -57,6 +57,3 @@ def ahorcado (intentos):
 		"|") 
 
 		
-#		_|_
-#		 |
-#		/ \

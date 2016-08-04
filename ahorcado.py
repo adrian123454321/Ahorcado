@@ -787,73 +787,27 @@ palabras=[
 ]
 
 palabra=random.choice(palabras)
-
+	
 
 print("Bienvenido")
 intentos=7
 print(palabra)
 guiones=[]
-for letra in palabra:
+for h in palabra:
 	guiones.append( "_" )
 print(guiones)
-	
-fun=ahorcado(intentos)
-print (fun)
+while intentos!=0:	
+	fun=ahorcado(intentos)
+	print (fun)
 
-letra=input("ingrese una letra: ")
-for i in range(len(palabra)):
-	if palabra[i]==letra:
+	letra=input("ingrese una letra: ")
+	for i in range(len(palabra)):
+		if palabra[i]==letra:
 	
-		guiones[i]=letra
-		print(guiones)
-	else:
-		intentos=(intentos-1)	
+			guiones[i]=letra
+			print(guiones)
+		if letra not in palabra:
+			intentos=intentos-1	
+			print(intentos)
+				
 		
-fun=ahorcado(intentos)
-print (fun)	
-
-letra=input("ingrese una letra: ")
-for i in range(len(palabra)):
-	if palabra[i]==letra:
-		
-		guiones[i]=letra
-		print(guiones)
-
-letra=input("ingrese una letra: ")
-for i in range(len(palabra)):
-	if palabra[i]==letra:
-	
-		guiones[i]=letra
-		print(guiones)
-	else:
-		intentos=(intentos-1)	
-fun=ahorcado(intentos)
-print (fun)
-
-
-letra=input("ingrese una letra: ")
-for i in range(len(palabra)):
-	if palabra[i]==letra:
-	
-		guiones[i]=letra
-		print(guiones)
-	else:
-		intentos=(intentos-1)	
-		
-
-fun=ahorcado(intentos)
-print (fun)	
-
-
-letra=input("ingrese una letra: ")
-for i in range(len(palabra)):
-	if palabra[i]==letra:
-	
-		guiones[i]=letra
-		print(guiones)
-	else:
-		intentos=(intentos-1)	
-		
-
-fun=ahorcado(intentos)
-print (fun)	
